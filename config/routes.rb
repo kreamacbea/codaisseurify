@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :profiles, only: [:new, :edit, :create, :update]
   resources :artists, only: [:index, :show, :new, :edit, :create, :update, :destroy]
   resources :songs, except: [:show, :destroy]
-  resources :photos, only: [:destroy]
+  resources :photos, only: [:index, :show, :destroy]
 end

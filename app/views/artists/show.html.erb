@@ -2,16 +2,16 @@
   <div class="col-md-9">
     <div class="panel panel-primary">
       <div class="panel-heading">
-        <h4><%= @artist.name %> : : List of Songs</h4>
+        <h4><%= @artist.name %> - List of Songs</h4>
       </div>
 
       <div class="panel-body">
           <div class="row">
             <div class="col-md-7">
               <% if @artist.songs.any? %>
-                <ul>
+                <ul class="song-list">
                   <% @artist.songs.each do |song| %>
-                    <li><%= song.title %></li>
+                    <li class="song-list-item"><%= song.title %></li>
                   <% end %>
                 </ul>
               <% else %>
@@ -21,7 +21,6 @@
 
             <div class="col-md-3 right">
               <%= link_to "Edit", edit_artist_path(@artist), class: "btn btn-default" %>
-              <%= link_to "Back", artists_path, class: "btn btn-default" %>
             </div>
           </div>
 
@@ -29,5 +28,6 @@
     </div>
 
     <%= link_to "Add new song", new_song_path, class: "btn btn-primary" %>
+    <%= link_to "Back to overview", artists_path, class: "btn btn-default" %>
   </div>
 </div>
