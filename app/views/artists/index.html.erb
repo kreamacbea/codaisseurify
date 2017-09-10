@@ -1,0 +1,16 @@
+<h1>Artists Overview</h1>
+
+<!-- Thumbnails -->
+<div class="row">
+  <% @artists.each do |artist| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img src="/assets/odesza.jpg" alt="album cover">
+        <div class="caption">
+          <h3><%= artist.name %></h3>
+          <p><%= link_to "View Songs", artist_path(artist), class: "btn btn-primary" %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
