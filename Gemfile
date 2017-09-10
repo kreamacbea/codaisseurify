@@ -63,8 +63,6 @@ gem 'jquery-rails', '~> 4.3.1'
 # Use Devise for authentication
 gem 'devise', '~> 4.2'
 
-# 12factor for serving assets
 gem 'rails_12factor', group: :production
-
-# Carrierwave for uploading images
 gem 'carrierwave', '0.11.2'
+gem 'cloudinary', '1.2.3'
