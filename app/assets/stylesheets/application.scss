@@ -45,3 +45,11 @@ body {
 .cover-container {
   margin-top: 10%;
 }
+
+.song-list {
+  list-style-type: decimal-leading-zero;
+  color: black;
+  text-shadow: none;
+  text-align: left;
+  font-weight: 600;
+}

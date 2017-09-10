@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.4.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -61,3 +62,9 @@ gem 'jquery-rails', '~> 4.3.1'
 
 # Use Devise for authentication
 gem 'devise', '~> 4.2'
+
+# 12factor for serving assets
+gem 'rails_12factor', group: :production
+
+# Carrierwave for uploading images
+gem 'carrierwave', '0.11.2'
