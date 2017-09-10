@@ -1,0 +1,16 @@
+<%= form_for @songs do |f| %>
+
+  <div class="form-group">
+    <label>Song title</label>
+    <%= f.text_area :name, placeholder: "Title of the song", class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Save", class: "btn btn-primary" %>
+  </div>
+
+  <div class="actions">
+    <%= link_to "Cancel", artist_path, class: "btn btn-default" %>
+  </div>
+
+<% end %>
