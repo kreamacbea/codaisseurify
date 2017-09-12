@@ -48,13 +48,15 @@ body {
 
 .song-list {
   list-style-type: decimal-leading-zero;
-  color: black;
-  text-shadow: none;
   text-align: left;
   font-weight: 600;
 }
 
-label {
+label, .artist-name, .song-list {
   color: black;
   text-shadow: none;
+}
+
+.artist-name {
+  font-weight: 600;
 }
