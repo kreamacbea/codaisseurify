@@ -1,6 +1,10 @@
 class SongsController < ApplicationController
 
+  def index
+  end
+
   def show
+    @songs = songs
   end
 
   def new
@@ -34,6 +38,6 @@ class SongsController < ApplicationController
   private
 
   def song_params
-    params.require(:song).permit(:title, :length, :artist_id)
+    params.require(:song).permit(:title, :length)
   end
 end
