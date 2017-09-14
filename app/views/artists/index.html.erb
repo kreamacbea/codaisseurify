@@ -8,12 +8,11 @@
          <% artist.photo %>
             <%= image_tag artist.photo.image.thumbnail %>
         <div class="caption">
-          <h3><%= artist.name %></h3>
-          <p><%= link_to "View Songs", artist_path(artist), class: "btn btn-primary" %></p>
+          <h3>
+            <%= link_to (artist.name), artist_path(:id), class: "artist-name" %>
+          </h3>
         </div>
       </div>
     </div>
     <% end %>
 </div>
-
-<%= link_to "Add new artist", new_artist_path, class: "btn btn-primary" %>
