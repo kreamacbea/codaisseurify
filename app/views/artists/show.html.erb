@@ -20,14 +20,14 @@
             </div>
 
             <div class="col-md-3 right">
-              <%= link_to "Delete artist", edit_artist_path(@artist), class: "btn btn-default" %>
+              <%= link_to "Add new song", new_artist_song_path, class: "btn btn-primary" %>
+              <%= link_to "Delete artist", edit_artist_song_path(@artist), class: "btn btn-default" %>
             </div>
           </div>
 
       </div>
     </div>
 
-    <%= link_to "Add new song", new_artist_song_path, class: "btn btn-primary" %>
     <%= link_to "Back to overview", artists_path, class: "btn btn-default" %>
   </div>
 </div>
