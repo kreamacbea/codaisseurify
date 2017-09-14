@@ -1,14 +1,13 @@
 Artist.destroy_all
 Song.destroy_all
-Photo.destroy_all
 
 # ARTISTS
-artist1 = Artist.create!(name: "Odesza")
-artist2 = Artist.create!(name: "Moloko")
-artist3 = Artist.create!(name: "Goldfrapp")
-artist4 = Artist.create!(name: "Röyksopp")
-artist5 = Artist.create!(name: "Bat For Lashes")
-artist6 = Artist.create!(name: "Air")
+artist1 = Artist.create!(name: "Odesza", remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505057088/odesza_tdppez.jpg")
+artist2 = Artist.create!(name: "Moloko", remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505057088/moloko_ocncs1.jpg")
+artist3 = Artist.create!(name: "Goldfrapp", remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059758/ODESZA-HIGHERGROUND_atnstq.jpg")
+artist4 = Artist.create!(name: "Röyksopp", remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059758/ODESZA-CORNERSOFTHEEARTH_ptyoo0.jpg")
+artist5 = Artist.create!(name: "Bat For Lashes", remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059758/ODESZA-LINEOFSIGHT_z5i6fm.jpg")
+artist6 = Artist.create!(name: "Air", remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059759/ODESZA-LATENIGHT_uklmur.jpg")
 
 # SONGS
 song1 = Song.create!(title: "Intro", length: "1:03", artist: artist1)
@@ -45,11 +44,3 @@ song30 = Song.create!(title: "Just You and Me Dancing", length: "1:17", artist: 
 song31 = Song.create!(title: "If You Have a Cross to Bear You May As Well Use It As a Crutch", length: "2:56", artist: artist6)
 song32 = Song.create!(title: "Keep Stepping", length: "0:21", artist: artist6)
 song33 = Song.create!(title: "Sing It Back (Boris Dlugosch Musical Mix)", length: "9:20", artist: artist6)
-
-# PHOTOS
-photo1 = Photo.create!(remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505057088/odesza_tdppez.jpg", artist: artist1)
-photo2 = Photo.create!(remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505057088/moloko_ocncs1.jpg", artist: artist2)
-photo3 = Photo.create!(remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059758/ODESZA-HIGHERGROUND_atnstq.jpg", artist: artist3)
-photo4 = Photo.create!(remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059758/ODESZA-CORNERSOFTHEEARTH_ptyoo0.jpg", artist: artist4)
-photo5 = Photo.create!(remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059758/ODESZA-LINEOFSIGHT_z5i6fm.jpg", artist: artist5)
-photo6 = Photo.create!(remote_image_url: "https://res.cloudinary.com/db926f0zb/image/upload/v1505059759/ODESZA-LATENIGHT_uklmur.jpg", artist: artist6)
